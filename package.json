@@ -1,0 +1,12 @@
+{
+  "name": "spider-loader",
+  "version": "0.0.1",
+  "description": "Webpack loader for the Spider programming language.",
+  "main": "index.js",
+  "author": "Reece Robinson <reecekrobinson@gmail.com> (reecer.org)",
+  "license": "ISC",
+  "dependencies": {
+    "loader-utils": "^0.2.5",
+    "spider-script": "^0.1.5"
+  }
+}
