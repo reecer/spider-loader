@@ -10,8 +10,10 @@ module.exports = function(source, map) {
       target: opts.target
     });
 
-    if (compiled.errors.length > 0)
-      this.callback(compiled.errors);
+    if (compiled.errors.length > 0){
+      var formtt = spider.formatErrors(this.resourcePath, source, compiled.errors);
+      this.callback({message: formtt});
+    }
     else
       this.callback(null, compiled.result, compiled.sourceMap);
 };
