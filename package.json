@@ -1,6 +1,6 @@
 {
   "name": "spider-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Webpack loader for the Spider programming language.",
   "main": "index.js",
   "author": "Reece Robinson <reecekrobinson@gmail.com> (reecer.org)",
