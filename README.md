@@ -12,7 +12,7 @@ npm i --save traceur-loader spider-loader
 
 *webpack.config.js*:
 ```js
-loaders: [ { test: /\.spider$/,  loader: "traceur!spider" } ]
+loaders: [ { test: /\.spider$/,  loader: "traceur?runtime&asyncFunctions&arrayComprehension!spider" } ]
 ```
 
 ###Options:
@@ -22,8 +22,7 @@ Both **target** (`ES5` or `ES6` (default)) and **sourceMap** compile options are
 {test: ..., loader: "traceur!spider?target=...&sourceMap"}
 ```
 
-The options for traceur are [available in the source](https://github.com/google/traceur-compiler/blob/master/src/Options.js#L25).
-For example: `"traceur?asyncFunctions&arrayComprehension!spider"`
+More traceur options are [available in the source](https://github.com/google/traceur-compiler/blob/master/src/Options.js#L25).
 
 
 ###Contributions
